@@ -41,7 +41,7 @@ const FolderCard = ({
             className={`${
               folder.is_starred
                 ? "text-yellow-500 fill-yellow-500"
-                : "text-gray-300 opacity-0 group-hover:opacity-100"
+                : "text-gray-300 opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
             }`}
           />
         </button>
@@ -82,14 +82,14 @@ const FolderCard = ({
           <>
             <button
               onClick={handleDownloadZip}
-              className="p-1.5 bg-white shadow-sm text-blue-500 rounded-full opacity-0 group-hover:opacity-100 hover:bg-blue-50 transition-all"
+              className="p-1.5 bg-white shadow-sm text-blue-500 rounded-full opacity-100 sm:opacity-0 sm:group-hover:opacity-100 hover:bg-blue-50 transition-all"
               title="Download as Zip"
             >
               <DownloadCloud size={14} />
             </button>
             <button
               onClick={(e) => onDelete(e, folder.id, "folder")}
-              className="p-1.5 bg-white shadow-sm text-gray-400 rounded-full opacity-0 group-hover:opacity-100 hover:text-red-500 transition-all"
+              className="p-1.5 bg-white shadow-sm text-gray-400 rounded-full opacity-100 sm:opacity-0 sm:group-hover:opacity-100 hover:text-red-500 transition-all"
             >
               <Trash2 size={14} />
             </button>
