@@ -25,7 +25,7 @@ const ImagePreviewModal = ({ file, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-[999] flex flex-col items-center justify-center bg-black/95 backdrop-blur-sm p-4 md:p-10 animate-in fade-in duration-300">
-      {/* 1. Glassmorphism Header Toolbar (Fixed at Top) */}
+      {/*  Glassmorphism Header Toolbar (Fixed at Top) */}
       <div className="absolute top-0 left-0 right-0 h-20 flex items-center justify-between px-6 md:px-12 bg-gradient-to-b from-black/60 to-transparent z-[1000]">
         <div className="flex flex-col">
           <h2 className="text-white font-medium truncate max-w-[200px] md:max-w-md">
@@ -73,7 +73,7 @@ const ImagePreviewModal = ({ file, onClose }) => {
         </div>
       </div>
 
-      {/* 2. Main Viewport Area */}
+      {/*  Main Viewport Area */}
       <div className="relative w-full h-full flex items-center justify-center group">
         {/* Backdrop Close Click Area */}
         <div className="absolute inset-0 cursor-zoom-out" onClick={onClose} />

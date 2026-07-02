@@ -9,6 +9,7 @@ import { AuthContext, AuthProvider } from "./context/AuthContext";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
+import LandingPage from "./pages/LandingPage";
 import { Toaster } from "react-hot-toast";
 
 //  component to check if user is logged in
@@ -25,8 +26,9 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/" element={<LandingPage />} />
           <Route
-            path="/"
+            path="/dashboard"
             element={
               <ProtectedRoute>
                 <Dashboard view="root" />
