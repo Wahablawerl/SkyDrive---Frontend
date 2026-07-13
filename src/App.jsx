@@ -44,7 +44,6 @@ function App() {
             }
           />
 
-          {/* We reuse the Dashboard component for these 'pages' */}
           <Route
             path="/starred"
             element={
@@ -69,6 +68,8 @@ function App() {
               </ProtectedRoute>
             }
           />
+
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
       <Toaster />
